@@ -3,9 +3,15 @@ node_js:
   - "stable"
 cache:
   directories:
-    - node_modules
+  - node_modules
 script:
   - npm test
   - npm run build
-on:
-  branch: master
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: 048b210e6d98e23d660f3dea2bef63daaf339e40
+  local_dir: build
+  on:
+    branch: dev
