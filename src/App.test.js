@@ -7,8 +7,8 @@ test('renders learn react link', () => {
   expect(linkElement).toBeInTheDocument();
 });
 
-describe('单元测试', () => {
-  it('测试用例', () => {
+describe('unit test', () => {
+  it('hello world', () => {
     const foo = true
     expect(foo).toBeTruthy() // 期望 foo 变量的值为 true
   })
